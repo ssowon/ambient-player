@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anibient Player</title>
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.11/mvp.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+  <div class="animals">
+    <span class="dog off">🐶</span>
+    <span class="cat off">🐱</span>
+    <span class="bird off">🦜</span>
+  </div>
+  <div class="slider_container">
+    <i class="fa fa-volume-down"></i>
+    <input type="range" min="1" max="100"
+      value="50" class="volume_slider" oninput="setVolume()">
+    <i class="fa fa-volume-up"></i>
+  </div>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
