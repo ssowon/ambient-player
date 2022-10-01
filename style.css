@@ -1,5 +1,10 @@
 .animals span {
-  font-size :100px;  cursor: pointer;
+  font-size: 100px; 
+  bottom: 10em; 
+  cursor: pointer;
+}
+.bg span {
+  font-size: 80px;  cursor: pointer;
 }
 
 .off {
