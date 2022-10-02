@@ -1,15 +1,38 @@
+:root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+body {
+  background-color: ghostwhite;
+  background-size: cover;
+  transition: background-image 0.3s linear;
+}
+
 .animals span {
   font-size: 100px; 
   bottom: 10em; 
   cursor: pointer;
 }
+
+.bg {
+  margin-bottom: 15em;
+}
+
 .bg span {
-  font-size: 80px;  cursor: pointer;
+  font-size: 80px;  
+  cursor: pointer;
 }
 
 .off {
-  color: rgba(0,0,0,0.2);
+  color: rgba(0,0,0,0.5);
 }
 .on {
   color: rgba(0,0,0,1);
+}
+
+.volume_slider {
+  margin: auto;
 }

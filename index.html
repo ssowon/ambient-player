@@ -10,6 +10,10 @@
   <link rel="shortcut icon" href="#">
 </head>
 <body>
+  <div class="slider_container">
+    <input type="range" min="1" max="100"
+      value="50" class="volume_slider" oninput="setVolume()">
+  </div>
   <div class="bg">
     <span class="bg_garden off">💐</span>
     <span class="bg_happy off">🎈</span>
@@ -20,12 +24,6 @@
     <span class="dog off">🐶</span>
     <span class="cat off">🐱</span>
     <span class="bird off">🦜</span>
-  </div>
-  <div class="slider_container">
-    <i class="fa fa-volume-down"></i>
-    <input type="range" min="1" max="100"
-      value="50" class="volume_slider" oninput="setVolume()">
-    <i class="fa fa-volume-up"></i>
   </div>
   <script src="app.js" type="text/javascript"></script>
 </body>

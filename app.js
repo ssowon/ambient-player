@@ -21,6 +21,7 @@ const audioSunny = new Audio("sound/bg_sunny.mp3");
 audioSunny.volume = 0.5;
 audioSunny.loop = true;
 
+const body = document.querySelector("body");
 const dog = document.querySelector(".dog");
 const cat = document.querySelector(".cat");
 const bird = document.querySelector(".bird");
@@ -97,12 +98,27 @@ function playBgSound(bgName) {
     bg = bgName;
     
     switch (bgName) {
-      case BG_GARDEN : audioGarden.play(); break;
-      case BG_HAPPY : audioHappy.play(); break;
-      case BG_RAIN : audioRain.play(); break;
-      case BG_SUNNY : audioSunny.play(); break;
+      case BG_GARDEN : 
+        audioGarden.play();
+        body.style.backgroundImage =  "url(image/garden.jpg)";
+        break;
+      case BG_HAPPY : 
+        audioHappy.play(); 
+        body.style.backgroundImage = "url(image/happy.jpg)";
+        break;
+      case BG_RAIN : 
+        audioRain.play();
+        body.style.backgroundImage = "url(image/rain.jpg)"; 
+        break;
+      case BG_SUNNY : 
+        audioSunny.play(); 
+        body.style.backgroundImage = "url(image/sunny.jpg)";
+        break;
     }
-  } else if (bg == bgName) bg = '';
+  } else if (bg == bgName) {
+    bg = '';
+    body.style.backgroundImage = "";
+  }
 
 }
 
